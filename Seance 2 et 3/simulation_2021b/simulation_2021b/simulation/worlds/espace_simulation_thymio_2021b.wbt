@@ -1,0 +1,70 @@
+#VRML_SIM R2021b utf8
+WorldInfo {
+  basicTimeStep 10
+  contactProperties [
+    ContactProperties {
+      material2 "thymio body"
+      coulombFriction [
+        0.7
+      ]
+    }
+  ]
+}
+Viewpoint {
+  orientation 0.20323325507249362 0.5515062821629264 0.809034649917706 2.527771327922415
+  position 0.9095749766727214 1.314632456466208 0.7016789624670017
+  follow "thymio2"
+}
+DirectionalLight {
+  ambientIntensity 1
+  color 1 1 0.8999999999999999
+  intensity 2
+  castShadows TRUE
+  castLensFlares TRUE
+}
+RectangleArena {
+  rotation 1 0 0 1.5708
+  floorTileSize 1 1
+  floorAppearance PBRAppearance {
+    baseColorMap ImageTexture {
+      url [
+        "textures/paper.jpg"
+      ]
+    }
+    roughness 1
+    metalness 0
+  }
+}
+Thymio2 {
+  hidden position_0_0 4.232304174860628e-11
+  hidden position_0_1 4.232150911730936e-11
+  translation 4.9095167454143694e-05 -0.12842506687216854 -2.0539496973115412e-05
+  rotation 0.9999999536163546 -0.00021430094582538837 -0.00021643103530800438 1.5612948491344028
+  controller "Anxieu"
+  bodySlot [
+    Thymio2Pen {
+    }
+  ]
+}
+Thymio2 {
+  hidden position_0_0 0.09530000645561733
+  hidden position_0_1 0.0953000065257997
+  translation 8.239560012581434e-05 0.14303999428649733 -1.954235020463352e-05
+  rotation 0.999999985577618 -0.00011947974675709577 -0.00012070357933375309 1.5612948171668906
+  name "Thymio II - pilotable"
+  controller "Indecis_2"
+}
+Thymio2 {
+  hidden position_0_0 0.09530001807864792
+  hidden position_0_1 0.09530001814879516
+  hidden rotation_1 1 0 0 0.09530001807864762
+  hidden rotation_2 1 0 0 0.09530001814879645
+  translation 6.91620092300034e-05 0.34111681806030547 -1.8814775482128843e-05
+  rotation 0.9999999873961158 -0.00011169084287765599 -0.00011284025738645534 1.5612948151715116
+  name "Thymio II - pilotable(1)"
+  controller "Indecis_2"
+}
+CardboardBox {
+  translation 0 -0.44 0.05
+  size 0.1 0.1 0.1
+}
