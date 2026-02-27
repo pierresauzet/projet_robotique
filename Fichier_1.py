@@ -1,3 +1,0 @@
-# premier script en python 
-text = " Hello World ! "
-print ( text ) 
